@@ -14,6 +14,10 @@ class MyActor
     puts "Actor #{@name} is doing something..."
   end
 
+  def do_something_badly
+    raise StandardError, "Ops! #{@nae} have have done something wrong..."
+  end
+
   def inc(num)
     @last_inc = num + 1
   end
